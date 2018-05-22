@@ -1,0 +1,76 @@
+NaN = Not a number and is a falsy value
+[] = truey
+{} = truey
+null = falsey
+
+if both o and a are empty objects it will evaluate as follows
+o === a is falsey
+
+if you set o equal to above
+it will evaluate to truey
+cause o and a are now pointing to same location
+
+
+if you want to use an array in an if statement you evaluate the length size.
+Otherwise it evaluates to a true statement.
+
+Arrays are a clas and objects are objects
+
+let array = new Array();
+or let array = [];
+initializes an array;
+
+array = new Array(8).fill('love');
+array = new Array(8).fill({name: 'john', age: '30'});
+
+array[0] = {name: 'Pepito', age: '20'} //will change one value
+
+let 0 = {name: 'pepe', age: 20}; array = new Array(8).fill(o); //will change all values
+
+const o = {name: 'Fifi'}
+
+o.name = 'alberto'
+
+o['age'] = 20; //adds a new key value apir to a constant variable pointing to an object;
+
+o.age = 20; //same as above, but using dot notation
+
+delete o.name //deletes 
+
+to find the keys in an object use
+Object.keys
+
+to check if an object is not empty
+Object.keys(0).length;
+
+typeof {} === typeof []
+truey
+
+!(a && b) === !a || !b
+!(a || b) === !a && !b
+
+//corollaries:
+!(a && b && c && d) === !a || !b || !c || !d
+!(a || b || c || d) === !a && !b && !c && !d
+
+a           b          !(a && b)        !a || !b
+
+
+
+!(a > b)   ===   (a <= b)
+n > 8             n <= 8
+n >= 2            n < 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
