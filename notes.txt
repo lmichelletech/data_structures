@@ -14,7 +14,7 @@ cause o and a are now pointing to same location
 if you want to use an array in an if statement you evaluate the length size.
 Otherwise it evaluates to a true statement.
 
-Arrays are a clas and objects are objects
+Arrays and classes are objects
 
 let array = new Array();
 or let array = [];
@@ -60,6 +60,65 @@ a           b          !(a && b)        !a || !b
 !(a > b)   ===   (a <= b)
 n > 8             n <= 8
 n >= 2            n < 2
+------------------------------
+
+Object.keys(0) ///returns array of all the keys
+Object.keys(0).length //zero means it's empty
+
+let a = [{name: "bob"}, {name: 'pepe'}, {name: 'juan'}, {name: 'Alberto'}];
+let p = [{name: "a"}, {name: 'b'}, {name: 'c'}, {name: 'd'}];
+
+
+//forEach is a method used with arrays
+a.forEach()
+or
+a.find( e => e.name === 'pepe'); //find is a call back function
+
+to look for object with a letter a // find will stop when it finds the first one
+a.find( e => { for(var key in e) return (e[key]).match(/a/gi)});
+
+//filter finds all occurences
+a.filter(e => {
+for (var key in e)
+{
+        return (e[key]).match(/a/gi);
+}})
+
+
+note: to find values type a and hit enter
+this will show all methods used with arrays
+
+note: concat does not change original arrays. Must assign result to a new variable.
+
+a.concat(p);
+
+a.concat(p, [{age:23}])
+
+//go to regex101 to test
+
+
+map always returns an array , the same length as the original, if something is skipped it will return as undefines
+
+
+reduce is a function that takes a call back function as a parameter and this function takes an accumulator and an element
+it returns the value of the accumulator to be used in the function
+
+
+
+arr.reduce(function(a, e){
+
+e = {name: 'lola'}
+
+return a[e.name]
+
+},{});
+
+
+to get a number between 20 and 100
+Math.ceil(Math.random() * 100)
+
+//boolean result - checks array looking for some requirement and then stops
+arr.some( (e, i, arr) => )
 
 
 
